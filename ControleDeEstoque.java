@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package PROJETO;
+=======
+package Projeto;
+>>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 
 
 
@@ -14,10 +18,13 @@ public class ControleDeEstoque {
     private int vender;
     private int escolhaProduto;
     
+<<<<<<< HEAD
     
     ControleDeEstoque(){
     	
     }
+=======
+>>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 
 
     public ControleDeEstoque(Fornecedor fornecedor, Produto produto){
@@ -27,6 +34,7 @@ public class ControleDeEstoque {
         this.dinheiroEstoque = dinheiroEstoque;
     }
 
+<<<<<<< HEAD
     public ControleDeEstoque( Produto p0, Fornecedor f0){
 		this.fornecedor = fornecedor;
         this.produto = produto;
@@ -62,6 +70,10 @@ public class ControleDeEstoque {
 
 
 
+=======
+    
+
+>>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 	public void Produto(double valor,Produto produto, String dataEntrada){
         this.produto = produto;
         this.dataEntrada = dataEntrada;
@@ -108,6 +120,7 @@ public class ControleDeEstoque {
 		return novoSaldo;
 	}
     public int getComprar() {
+<<<<<<< HEAD
     	this.comprar = produto.getQuantidadeProduto() + comprar;
 		return comprar;
 	}
@@ -129,12 +142,38 @@ public class ControleDeEstoque {
 	}
     public int getEscolhaProduto() {
     	this.escolhaProduto = produto.codProduto;
+=======
+    	this.comprar = comprar - produto.getQuantidadeProduto();
+		return comprar;
+	}
+    public void setComprar(int comprar) {
+    	if (this.comprar > 0)
+		this.comprar = comprar;
+		this.novoSaldo = this.dinheiroEstoque -(produto.getValorProduto() * this.comprar);
+		
+	}
+    public int getVender() {
+    	this.vender = vender + produto.getQuantidadeProduto();
+		return vender;
+	}
+    public void setVender(int vender) {
+    	
+		this.vender = vender;
+		this.novoSaldo = this.dinheiroEstoque +(produto.getValorProduto() * this.vender);
+	}
+    public int getEscolhaProduto() {
+    	this.escolhaProduto = produto.getCodProduto();
+>>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 		return escolhaProduto;
 	}
     public void setEscolhaProduto(int escolhaProduto) {
 		this.escolhaProduto = escolhaProduto;
 	}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 
     
     
