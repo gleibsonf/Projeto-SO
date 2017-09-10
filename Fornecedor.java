@@ -1,18 +1,14 @@
-<<<<<<< HEAD
 package PROJETO;
-=======
-package Projeto;
->>>>>>> 9b2ab1ae5075b57af6e684b7fed1ad34529bf7c8
 
 public class Fornecedor {
-	private String nome;
+    private String nome;
     private String cnpj;
     private String email;
     private Produto produto;
     private String telefone;
     private String lote;
 
-   
+
 
     public String getNome() {
         return nome;
